@@ -2,7 +2,7 @@ const water = {
     id: 'water',
     title: 'Water',
     image: '',
-    description: `The CDC recommends storing a three-day supply of water for your household, for drinking and sanitation purposes. This means you will need one gallon of water per person (and pet!) per day. If anyone in your home is pregnant or ill, or if you live in a hot climate, you might want to consider storing more.`,
+    overview: `The CDC recommends storing a three-day supply of water for your household, for drinking and sanitation purposes. This means you will need one gallon of water per person (and pet!) per day. If anyone in your home is pregnant or ill, or if you live in a hot climate, you might want to consider storing more.`,
     options: [{
         id: 'waterOne',
         description: `Store my water!`,
@@ -23,7 +23,7 @@ const food = {
     id: 'food',
     title: 'Food',
     image: '',
-    description: `Store at least a three-day supply of non-perishable food for everyone in your household. Make sure you will also have access to any needed can-openers, cooking/eating utensils, etc.`,
+    overview: `Store at least a three-day supply of non-perishable food for everyone in your household. Make sure you will also have access to any needed can-openers, cooking/eating utensils, etc.`,
     options: [{
         id: 'foodOne',
         description: `My pantry is always fully stocked!`,
@@ -43,7 +43,7 @@ const electricity = {
     id: 'electricity',
     title: 'Electricity',
     image: '',
-    description: `In an emergency, you will likely be without electricity for up to three days. You should use devices (like your phone) sparingly to preserve battery, but it's also a good idea to have backup power options.`,
+    overview: `In an emergency, you will likely be without electricity for up to three days. You should use devices (like your phone) sparingly to preserve battery, but it's also a good idea to have backup power options.`,
     options: [{
         id: 'electricityOne',
         description: `I will keep a supply of batteries and/or power bricks!`,
@@ -63,7 +63,7 @@ const communication = {
     id: 'communication',
     title: 'Communication',
     image: '',
-    description: `family communication plan DO IT, have a meeting place, in a regional emergency, have an out-of-area contact who everyone can call--memorize the phone number!`,
+    overview: `family communication plan DO IT, have a meeting place, in a regional emergency, have an out-of-area contact who everyone can call--memorize the phone number!`,
     options: [{
         id: 'communicationOne',
         description: `I will go to my nearest BEECN site!`,
@@ -83,7 +83,7 @@ const shelter = {
     id: 'shelter',
     title: 'Shelter',
     image: '',
-    description: `If your home remains intact after a disaster, it is likely your safest location to shelter in place. But if your home is now unsafe, you will need a portable way to stay out of the elements and keep warm.`,
+    overview: `If your home remains intact after a disaster, it is likely your safest location to shelter in place. But if your home is now unsafe, you will need a portable way to stay out of the elements and keep warm.`,
     options: [{
         id: 'shelterOne',
         description: `I will use a tent or tarp!`,
@@ -103,7 +103,7 @@ const firstAid = {
     id: 'first-aid',
     title: 'First Aid',
     image: '',
-    description: `Your first-aid kit should contain enough supplies for everyone in your household, at a minimum. If anyone needs daily medication or vision correction, keep a backup supply in your kit. Think about any other special needs of people in your household that may need accommodation. It is also a good idea to have a small first-aid guide stored in your kit.`,
+    overview: `Your first-aid kit should contain enough supplies for everyone in your household, at a minimum. If anyone needs daily medication or vision correction, keep a backup supply in your kit. Think about any other special needs of people in your household that may need accommodation. It is also a good idea to have a small first-aid guide stored in your kit.`,
     options: [{
         id: 'firstAidOne',
         description: `I will buy a pre-assembled first-aid kit!`,
@@ -123,7 +123,7 @@ const sanitation = {
     id: 'sanitation',
     title: 'Sanitation',
     image: '',
-    description: `sanitation is important, don't poop in your water`,
+    overview: `sanitation is important, don't poop in your water`,
     options: [{
         id: 'sanitationOne',
         description: `I will use bucket toilets!`,

@@ -1,3 +1,4 @@
+
 export function makeUser(formData) {
     const user = {
         name: formData.get('name'),
@@ -20,3 +21,8 @@ export function getUser() {
     const user = JSON.parse(json);
     return user;
 }
+
+//functions needed:
+    //findById
+
+
