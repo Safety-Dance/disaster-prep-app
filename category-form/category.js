@@ -1,14 +1,52 @@
 //Category Page Algorithm
 
-//Get the user from local storage (function, utils.js)
+// import functions
+import { categoriesArray } from '../data/data.js';
+import { getUser, saveUser } from '../common/utils.js';
+import renderCategory from './render-category.js';
 
-//Get search params to reference id for displaying metadata
-    //make a findById function (utils.js?)
+/////////////////////
+//TEMPORARY findById function
+/////////////////////
+function findById(someArray, someId) {
+    for (let index = 0; index < someArray.length; index++) {
+        const item = someArray[index];
+        if (item.id === someId) {
+            return item;
+        }
+    }
+    return null;
+}
+/////////////////////////////
 
-//forEach of the category options
-    //render textContent to <p> variable name.overview 
-    //render labels and checkbox inputs with ids, value, and name
-    //render the options and append to the inputs
+const categories = categoriesArray.slice();
+const user = getUser();
+
+/// Get DOM elements
+const form = document.querySelector('form');
+
+const searchParams = new URLSearchParams(window.location.search);
+const categoryId = searchParams.get('id');
+
+const category = findById(categories, categoryId);
+
+renderCategory(category);
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const selectedInputs = document.querySelectorAll('input:checked');
+
+    const formData = new FormData(form);
+
+    console.log(selectedOptions);
+
+    // if else statement that goes through each and sets get on that input's namegit
+
+    // saveUser(user);
+
+    // window.location = './category-form/index.html?id=water';
+});
 
 //add event listener to form
     //use new FormData to get new instance of form data
