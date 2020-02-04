@@ -2,22 +2,8 @@
 
 // import functions
 import { categoriesArray } from '../data/data.js';
-import { getUser, saveUser } from '../common/utils.js';
+import { getUser, saveUser, findById } from '../common/utils.js';
 import renderCategory from './render-category.js';
-
-/////////////////////
-//TEMPORARY findById function
-/////////////////////
-function findById(someArray, someId) {
-    for (let index = 0; index < someArray.length; index++) {
-        const item = someArray[index];
-        if (item.id === someId) {
-            return item;
-        }
-    }
-    return null;
-}
-/////////////////////////////
 
 const categories = categoriesArray.slice();
 const user = getUser();
@@ -37,16 +23,19 @@ form.addEventListener('submit', (event) => {
 
     const selectedInputs = document.querySelectorAll('input:checked');
 
-    const formData = new FormData(form);
+    selectedInputs.forEach((input) => {
+        user.responses[categoryId].push(input.name);
 
-    console.log(selectedOptions);
-
+    });
+    saveUser(user);
+    
+});
     // if else statement that goes through each and sets get on that input's namegit
 
     // saveUser(user);
 
     // window.location = './category-form/index.html?id=water';
-});
+
 
 //add event listener to form
     //use new FormData to get new instance of form data
