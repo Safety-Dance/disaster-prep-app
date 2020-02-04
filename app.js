@@ -9,7 +9,7 @@
 //add an event listener to the form on submit
     //get DOM elements from html
     //use new FormData to get new instance of form data
-        //use name for .get() 
+        //.get(formData), must use name attribute 
         //push into user object
     //stringify and set/save user object to local storage (name, 'user-info') (function utils.js)
 

@@ -2,3 +2,5 @@
     //makeUser
     //getUser
     //saveUser
+    //findById
+
