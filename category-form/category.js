@@ -41,7 +41,7 @@ form.addEventListener('submit', (event) => {
 
     console.log(selectedOptions);
 
-
+    // if else statement that goes through each and sets get on that input's namegit
 
     // saveUser(user);
 
