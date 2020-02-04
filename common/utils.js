@@ -2,11 +2,18 @@
 export function makeUser(formData) {
     const user = {
         name: formData.get('name'),
-        description: formData.get(''),
-        options: formData.get(''),
-        completed: {}
+        email: formData.get('email'),
+        numberHouseholdMemebers: formData.get('number-household-members'),
+        responses: {
+            water: [],
+            food: [],
+            shelter: [],
+            communication: [],
+            firstAid: [],
+            electricity: [],
+            sanitation: [],
+        }
     };
-
     return user;
 }
 
