@@ -3,6 +3,7 @@
 // import functions
 import { categoriesArray } from '../data/data.js';
 import { getUser, saveUser } from '../common/utils.js';
+import renderCategory from './render-category.js';
 
 /////////////////////
 //TEMPORARY findById function
@@ -18,16 +19,17 @@ function findById(someArray, someId) {
 }
 /////////////////////////////
 
-
 const categories = categoriesArray.slice();
-
 const user = getUser();
+
+/// Get DOM elements
+const form = document.querySelector('form');
 
 const searchParams = new URLSearchParams(window.location.search);
 const categoryId = searchParams.get('id');
 
 const category = findById(categories, categoryId);
-
+renderCategory(category);
 
 //forEach of the category options
     //render textContent to <p> variable name.overview 
