@@ -13,7 +13,7 @@
 //add event listener to form
     //use new FormData to get new instance of form data
         // .get(formData), must use name attribute
-        //push into user object
+        //push only the selected option ids into the responses key as an array within the user object
          //stringify and set/save user object to local storage (function utils.js)
 
     //on submit, move to the next category

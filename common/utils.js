@@ -1,6 +1,6 @@
 //functions needed:
-    //makeUser
-    //getUser
+    //makeUser - mob Tues AM
+    //getUser (json.parse)
     //saveUser
     //findById
 
