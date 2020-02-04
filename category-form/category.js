@@ -28,21 +28,20 @@ form.addEventListener('submit', (event) => {
 
     });
     saveUser(user);
+
+    let currentIndex = categories.indexOf(category);
+    console.log(currentIndex);
+    const nextIndex = currentIndex + 1;
+    console.log(nextIndex);
+    const nextCategory = categories[nextIndex];
+    console.log(nextCategory);
+    const nextCategoryId = nextCategory.id;
+    console.log(nextCategoryId);
+
+    window.location = `./index.html?id=${nextCategoryId}`;
     
 });
-    // if else statement that goes through each and sets get on that input's namegit
-
-    // saveUser(user);
-
-    // window.location = './category-form/index.html?id=water';
-
-
-//add event listener to form
-    //use new FormData to get new instance of form data
-        // .get(formData), must use name attribute
-        //push only the selected option ids into the responses key as an array within the user object
-         //stringify and set/save user object to local storage (function utils.js)
-
+   
     //on submit, move to the next category
         //get current query params
         //match to index number of array
@@ -50,5 +49,5 @@ form.addEventListener('submit', (event) => {
         //use new index number to generate new query param on window location 
         //if all questions are complete, move to window.location results page
 
-        //note: try using indexOf() or maybe use slice if worried about mutation
+        //note: try using indexOf() 
 

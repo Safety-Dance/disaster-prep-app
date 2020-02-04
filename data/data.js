@@ -99,8 +99,8 @@ const shelter = {
     }],
 };
 
-const firstAid = {
-    id: 'first-aid',
+const firstaid = {
+    id: 'firstaid',
     title: 'First Aid',
     image: '',
     overview: `Your first-aid kit should contain enough supplies for everyone in your household, at a minimum. If anyone needs daily medication or vision correction, keep a backup supply in your kit. Think about any other special needs of people in your household that may need accommodation. It is also a good idea to have a small first-aid guide stored in your kit.`,
@@ -144,7 +144,7 @@ export const categoriesArray = [
     food,
     shelter,
     communication,
-    firstAid,
+    firstaid,
     electricity,
     sanitation
 ];
