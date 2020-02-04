@@ -17,17 +17,19 @@ export function makeUser(formData) {
     return user;
 }
 
-export function saveUser(user) {
-    const json = JSON.stringify(user);
-    localStorage.setItem('user', json);
-}
-
 export function getUser() {
-    const json = localStorage.getItem('user');
-    if (!json) return null;
-    const user = JSON.parse(json);
+    const stringyUser = localStorage.getItem('user');
+    if (!stringyUser) return null;
+    const user = JSON.parse(stringyUser);
     return user;
 }
+
+export function saveUser(user) {
+    const stringyUser = JSON.stringify(user);
+    localStorage.setItem('user', stringyUser);
+}
+
+
 
 //functions needed:
     //findById
