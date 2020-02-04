@@ -139,7 +139,7 @@ const sanitation = {
     }],
 };
 
-export const categories = [
+export const categoriesArray = [
     water,
     food,
     shelter,

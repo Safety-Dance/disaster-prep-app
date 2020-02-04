@@ -1,9 +1,33 @@
 //Category Page Algorithm
 
-//Get the user from local storage (function, utils.js)
+// import functions
+import { categoriesArray } from '../data/data.js';
+import { getUser, saveUser } from '../common/utils.js';
 
-//Get search params to reference id for displaying metadata
-    //make a findById function (utils.js?)
+/////////////////////
+//TEMPORARY findById function
+/////////////////////
+function findById(someArray, someId) {
+    for (let index = 0; index < someArray.length; index++) {
+        const item = someArray[index];
+        if (item.id === someId) {
+            return item;
+        }
+    }
+    return null;
+}
+/////////////////////////////
+
+
+const categories = categoriesArray.slice();
+
+const user = getUser();
+
+const searchParams = new URLSearchParams(window.location.search);
+const categoryId = searchParams.get('id');
+
+const category = findById(categories, categoryId);
+
 
 //forEach of the category options
     //render textContent to <p> variable name.overview 
