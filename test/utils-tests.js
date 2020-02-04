@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { findById, makeUser } from '../common/utils.js';
+import { findById, makeUser, saveUser, getUser } from '../common/utils.js';
 import { categories } from '../data/data.js';
 
 const test = QUnit.test;
@@ -35,4 +35,19 @@ test('Make User', function (assert) {
     //Assert
     // Make assertions about what is expected valid result
     assert.deepEqual(result, expected);
+});
+
+test('Save User', function (assert) {
+    //Arrange
+
+    // Set up your parameters and expectations
+    const user = 1;
+    saveUser(user);
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const expected = 1;
+    const result = getUser();
+    //Assert
+    // Make assertions about what is expected valid result
+    assert.equal(result, expected);
 });
