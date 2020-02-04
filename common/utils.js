@@ -3,7 +3,7 @@ export function makeUser(formData) {
     const user = {
         name: formData.get('name'),
         email: formData.get('email'),
-        numberHouseholdMemebers: formData.get('number-household-members'),
+        numberHouseholdMembers: formData.get('number-household-members'),
         responses: {
             water: [],
             food: [],
