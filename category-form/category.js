@@ -29,12 +29,24 @@ const searchParams = new URLSearchParams(window.location.search);
 const categoryId = searchParams.get('id');
 
 const category = findById(categories, categoryId);
+
 renderCategory(category);
 
-//forEach of the category options
-    //render textContent to <p> variable name.overview 
-    //render labels and checkbox inputs with ids, value, and name
-    //render the options and append to the inputs
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const selectedInputs = document.querySelectorAll('input:checked');
+
+    const formData = new FormData(form);
+
+    console.log(selectedOptions);
+
+
+
+    // saveUser(user);
+
+    // window.location = './category-form/index.html?id=water';
+});
 
 //add event listener to form
     //use new FormData to get new instance of form data
