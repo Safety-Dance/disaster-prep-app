@@ -3,9 +3,16 @@
 //get user
 
 //render user's selections and append to the appropriate div
+
+// user.responses.firstAid.forEach(choice => {
+//   console.log(choice);
+// });
+
+
     //use findById function to get the user's selected options
     
     //forEach selected option, render the text of description and tips
+
         //create checkbox inputs for each description
             //set textContent
             //append to label
