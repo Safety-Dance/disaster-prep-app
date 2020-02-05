@@ -12,7 +12,8 @@ export function makeUser(formData) {
             firstaid: [],
             electricity: [],
             sanitation: [],
-        }
+        },
+        progress: 0,
     };
     return user;
 }
