@@ -4,7 +4,7 @@ import { categoriesArray } from '../data/data.js';
 
 const test = QUnit.test;
 
-test('Find By Id', function (assert) {
+test('Find By Id', function(assert) {
     //Arrange
 
     // Set up your parameters and expectations
@@ -18,7 +18,7 @@ test('Find By Id', function (assert) {
     assert.equal(result, expected);
 });
 
-test('Make User', function (assert) {
+test('Make User', function(assert) {
     //Arrange
     const formData = new FormData();
     formData.set('name', 'Safety First');
@@ -47,7 +47,7 @@ test('Make User', function (assert) {
     assert.deepEqual(result, expected);
 });
 
-test('Save User', function (assert) {
+test('Save User', function(assert) {
     //Arrange
 
     // Set up your parameters and expectations
