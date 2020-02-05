@@ -1,8 +1,9 @@
 .developers {
     text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 img {
     border-radius: 50%;
-    flex: wrap;
 }
