@@ -2,12 +2,20 @@ import { renderOption } from './render-option.js';
 
 const form = document.querySelector('form');
 
-export default function renderCategory(category) {
-    // put category description text in p tag
+export default function renderCategory(category, user) {
+    
+    const userName = document.getElementById('user-name');
+
+    userName.textContent = `${user.name}!`;
+
+    const categoryName = document.getElementById('category-name');
+
+    categoryName.textContent = category.title;
+
     const pTag = document.getElementById('description');
     
     pTag.textContent = category.overview;
-    // for each category option, create a label tag with the option description text, append a checkbox input to the label, and append the label to the form
+    
     for (let i = 0; i < category.options.length; i++) {
         const option = category.options[i];
         const renderedOption = renderOption(option);
