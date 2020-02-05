@@ -8,9 +8,9 @@
     * Food
     * Electricity/Light
     * Communication
-    * Shelter/Warnth
+    * Shelter/Warmth
     * First Aid
-    * Waste Management
+    * Sanitation
 * easy to navigate, intuitive
 * store custom user generated lists
 * focus of emergency prep is "the big one" in Portland Metro Area
