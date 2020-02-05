@@ -12,19 +12,27 @@
 
 <body>
     <header>
-        <img src="https://www.placecage.com/100/100" />
-        <h1>Disaster Preparedness App</h1>
+        <img src="../assets/DisasterProofLogo/DisasterProof_Combined_Symbol_Wordmark_White.png" alt="picture of disasterproof logo"/>
     </header>
 
     <main>
         <div class="container">
-            <h2>Thanks, <span id="user-name"></span></h2>
-            <p>Now let's go through some household-specific needs to be prepared for in the case of a disaster.</p>
+            <div id="greeting">
+                <h2>Thanks, <span id="user-name"></span></h2>
+                <p>Now let's go through some household-specific needs to be prepared for in the case of a disaster.</p>
+            </div>
 
-            <h3 id="category-name"></h3>
-            <hr />
+            <progress value="0" max="100" id="progress-bar"></progress>
 
-            <progress value="0" max="100"></progress>
+            <div id = "category-title">
+                <div id = "hr-left">
+                    <hr class = "inline" />
+                </div>
+                <h3 id="category-name"></h3>
+                <div id = "hr-right" >
+                    <hr class = "inline" />
+                </div>
+            </div>
 
             <form>
                 <p id="description"></p>

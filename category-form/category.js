@@ -28,12 +28,12 @@ form.addEventListener('submit', (event) => {
 
     let currentIndex = categories.indexOf(category);
     const nextIndex = currentIndex + 1;
-    const nextCategory = categories[nextIndex];
-    const nextCategoryId = nextCategory.id;
 
     progressBar.value++;
 
-    if (nextIndex < 6) {
+    if (nextIndex <= 6) {
+        const nextCategory = categories[nextIndex];
+        const nextCategoryId = nextCategory.id;
         window.location = `./index.html?id=${nextCategoryId}`;
     } else {
         window.location = '../results/';

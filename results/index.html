@@ -12,56 +12,17 @@
 
 <body>
     <header>
-        <img src="https://www.placecage.com/100/100" />
-        <h1>Disaster Preparedness App</h1>
+        <img src="../assets/DisasterProofLogo/DisasterProof_Combined_Symbol_Wordmark_White.png" alt="picture of disasterproof logo"/>
     </header>
 
     <main>
         <div class="container">
             <h2></h2>
-            <button>Generate as PDF</button>
+            <form>
+                <input type=button name=print value="Print or Save as PDF" onClick="window.print()">
+            </form>
+        </div>
 
-            <div id="water-plan">
-                <h3>Water</h3>
-                
-                <label> 
-                    <input type="checkbox" />
-                    <span>Store my water!</span>
-                    <p>"You can buy pre-packaged water, or food-safe containers to store your own tap water. It’s a good idea to keep water in a few different places, like your garage, car, or storage closet."</p>
-                </label>
-                <hr />
-                
-            </div>
-            <div id="food-plan">
-                <h3>Food</h3>
-                <hr />
-                
-            </div>
-            <div id="shelter-plan">
-                <h3>Shelter</h3>
-                <hr />
-                
-            </div>
-            <div id="communications-plan">
-                <h3>Communications</h3>
-                <hr />
-                
-            </div>
-            <div id="first-aid-plan">
-                <h3>First-Aid</h3>
-                <hr />
-                
-            </div>
-            <div id="electricity-plan">
-                <h3>Electricity</h3>
-                <hr />
-                
-            </div>
-            <div id="sanitation-plan">
-                <h3>Sanitation</h3>
-                <hr />
-                
-            </div>
     </main>
     <script type="module" src="results.js"></script>
 </body>
