@@ -30,15 +30,16 @@ form.addEventListener('submit', (event) => {
     saveUser(user);
 
     let currentIndex = categories.indexOf(category);
-    console.log(currentIndex);
     const nextIndex = currentIndex + 1;
-    console.log(nextIndex);
     const nextCategory = categories[nextIndex];
-    console.log(nextCategory);
     const nextCategoryId = nextCategory.id;
-    console.log(nextCategoryId);
 
-    window.location = `./index.html?id=${nextCategoryId}`;
+    if (nextIndex < 6) {
+        window.location = `./index.html?id=${nextCategoryId}`;
+    } else {
+        window.location = '../results/';
+    }
+    
     
 });
    
