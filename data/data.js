@@ -123,7 +123,7 @@ const sanitation = {
     id: 'sanitation',
     title: 'Sanitation',
     image: '',
-    overview: `sanitation is important, don't poop in your water`,
+    overview: `Sanitation is often overlooked in planning for a disaster, but it is essential to keeping yourself and your family healthy. Think about everyday items you may need for hygeine (toiletries, etc), and what you will do if plumbing fails.`,
     options: [{
         id: 'sanitationOne',
         description: `I will use bucket toilets!`,
