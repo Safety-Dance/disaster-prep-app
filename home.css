@@ -1,6 +1,36 @@
-body {
-  background: #4392F2;
+header {
+  width: 40%;
+  margin: 50px auto;
 }
+
+#logo {
+  width: 100%;
+}
+
+.container {
+  width: 65%;
+  margin: 0 auto;
+}
+
+#app-description {
+  font-size: 14px;
+  text-align: center;
+}
+
+form {
+  color: #000;
+  background: #E3EBFF;
+  width: 50%;
+  margin: 40px auto;
+  padding: 25px;
+}
+
+.form-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+
 
 footer {
   position: absolute;

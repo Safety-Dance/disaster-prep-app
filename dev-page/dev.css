@@ -1,9 +1,40 @@
-.developers {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
+header {
+    width: 40%;
+    margin: 50px auto;
 }
 
-img {
+#logo {
+    width: 100%;
+}
+
+.developers {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+.developer {
+    width: 15%;
+    margin: 20px;
+}
+
+.developer img {
+    width: 80%;
     border-radius: 50%;
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+    .developers {
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .developer {
+        width: 80%;
+        margin: 10px auto;
+    }
+
 }
