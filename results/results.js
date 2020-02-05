@@ -1,6 +1,11 @@
-//Results page algorithm
 
-//get user
+import { getUser } from '../common/utils.js';
+import { renderCategoryDiv } from './render-category-div.js';
+
+const user = getUser();
+
+const h2 = document.querySelector('h2');
+h2.textContent = `Ok, ${user.name} - here's your tailored disaster prep plan`;
 
 //render user's selections and append to the appropriate div
 
