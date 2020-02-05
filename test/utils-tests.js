@@ -34,10 +34,11 @@ test('Make User', function(assert) {
             food: [],
             shelter: [],
             communication: [],
-            firstAid: [],
+            firstaid: [],
             electricity: [],
             sanitation: [],
-        }
+        },
+        progress: 0,
     };
     //Act 
     // Call the function you're testing and set the result to a const
