@@ -9,7 +9,7 @@ export function makeUser(formData) {
             food: [],
             shelter: [],
             communication: [],
-            firstAid: [],
+            firstaid: [],
             electricity: [],
             sanitation: [],
         }
