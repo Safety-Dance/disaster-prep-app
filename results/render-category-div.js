@@ -1,5 +1,5 @@
 import { renderCheckedOptionsTips } from './render-checked-options-tips.js';
-import { findById } from '../common/utils.js';
+import { findById, householdMultiplier } from '../common/utils.js';
 
 export function renderCategoryDiv(category, categoryId, user) {
     const containerDiv = document.querySelector('.container');
@@ -8,6 +8,13 @@ export function renderCategoryDiv(category, categoryId, user) {
     const h3 = document.createElement('h3');
     h3.textContent = category.title;
     newDiv.appendChild(h3);
+
+    if (category.title === 'Water') {
+        const newSpan = document.createElement('span');
+        newDiv.appendChild(newSpan);
+        const waterNeeded = householdMultiplier(user);
+        newSpan.textContent = `Based on your household size, you should plan to store ${waterNeeded} gallons of water`;
+    }
 
     // loop through selected options and render tips content
     // renderCheckedOptionsTips();

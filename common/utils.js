@@ -37,6 +37,11 @@ export function findById(array, id) {
             return item;
         }
     }
-
     return null;
+}
+
+export function householdMultiplier(user) {
+    const householdMembers = Number(user.numberHouseholdMembers);
+    const waterNeeded = (householdMembers * 3);
+    return waterNeeded;
 }
