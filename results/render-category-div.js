@@ -12,6 +12,7 @@ export function renderCategoryDiv(category, categoryId, user) {
 
     if (category.title === 'Water') {
         const newPTag = document.createElement('p');
+        newPTag.id = 'water-id';
         newDiv.appendChild(newPTag);
         const waterNeeded = householdMultiplier(user);
         newPTag.textContent = `Based on your household size, you should plan to store ${waterNeeded} gallons of water.`;
