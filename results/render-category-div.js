@@ -5,6 +5,7 @@ export function renderCategoryDiv(category, categoryId, user) {
     const containerDiv = document.querySelector('.container');
 
     const newDiv = document.createElement('div');
+    newDiv.classList.add('results-div');
     const h3 = document.createElement('h3');
     h3.textContent = category.title;
     newDiv.appendChild(h3);
@@ -26,9 +27,6 @@ export function renderCategoryDiv(category, categoryId, user) {
 
         newDiv.appendChild(label);
     }
-
-    const hr = document.createElement('hr');
-    newDiv.appendChild(hr);
 
     containerDiv.appendChild(newDiv);
 
