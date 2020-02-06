@@ -19,10 +19,29 @@
     <main>
         <div class="container">
             <h2></h2>
+            <span>
+                <button id="facebook"
+                    class="sharer"
+                    data-sharer="facebook"
+                    data-title="I just made my disaster preparedness plan using DisasterProof. Click the link to make sure your household is prepared, too!"
+                    data-hashtag="DisasterProof"
+                    data-url="https://safety-dance.github.io/disaster-prep-app/">
+                    Share on Facebook
+                </button>
+            </span>
+            <span>
+                <button id="twitter"
+                    class="sharer"
+                    data-sharer="twitter" 
+                    data-title="I just made my disaster preparedness plan using DisasterProof. Click the link to make sure your household is prepared, too!"
+                    data-hashtag="DisasterProof"
+                    data-url="https://safety-dance.github.io/disaster-prep-app/">
+                    Share on Twitter
+                </button>
+            </span>
+            <input class="printformat" type=button name=print value="Print or Save as PDF" onClick="window.print()">
             <form>
                 <div class="flex">
-                    <input class="printformat" type=button name=print value="Print or Save as PDF"
-                        onClick="window.print()">
                 <div id="category-nav">
                     <a href="#water"><img src="../assets/icons/water_grey.png" alt="water icon" /></a>
                     <a href="#food"><img src="../assets/icons/food_grey.png" alt="water icon" /></a>
@@ -33,15 +52,9 @@
                     <a href="#sanitation"><img src="../assets/icons/sanitation_grey.png" alt="sanitation icon" /></a>
                 </div>
             </form>
-            <button id="facebook"
-                class="sharer"
-                data-sharer="facebook" 
-                data-url="">
-                Share on Facebook
-            </button>
         </div>
     </main>
     <script type="module" src="results.js"></script>
-    <script src="path/to/sharer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
 </body>
 </html>

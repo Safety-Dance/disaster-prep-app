@@ -15,9 +15,6 @@ export function renderCategoryDiv(category, categoryId, user) {
     h3.textContent = category.title;
     newDiv.appendChild(h3);
 
-
-    
-
     if (category.title === 'Water') {
         const newPTag = document.createElement('p');
         newPTag.id = 'water-id';
@@ -36,10 +33,4 @@ export function renderCategoryDiv(category, categoryId, user) {
     }
 
     containerDiv.appendChild(newDiv);
-
-
-}  
-
-
-
-    // 
+}
