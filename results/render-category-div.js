@@ -6,9 +6,17 @@ export function renderCategoryDiv(category, categoryId, user) {
 
     const newDiv = document.createElement('div');
     newDiv.classList.add('results-div');
+    newDiv.setAttribute('id', `${category.id}`);
+    const icon = document.createElement('img');
+    icon.src = `../assets/icons/${category.id}_red.png`;
+    icon.classList.add('icon');
+    newDiv.appendChild(icon);
     const h3 = document.createElement('h3');
     h3.textContent = category.title;
     newDiv.appendChild(h3);
+
+
+    
 
     if (category.title === 'Water') {
         const newSpan = document.createElement('span');
