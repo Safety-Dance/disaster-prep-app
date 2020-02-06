@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +8,21 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../common/main.css">
     <link rel="stylesheet" href="results.css">
+    <link rel="stylesheet" media="print" href="print.css">
     <title>DisasterProof</title>
 </head>
-
 <body>
     <header>
-        <img src="../assets/DisasterProofLogo/DisasterProof_Combined_Symbol_Wordmark_White.png" alt="picture of disasterproof logo"/>
+        <img src="../assets/DisasterProofLogo/DisasterProof_Combined_Symbol_Wordmark_White.png"
+            alt="picture of disasterproof logo" />
     </header>
-
     <main>
         <div class="container">
             <h2></h2>
             <form>
-                <input type=button name=print value="Print or Save as PDF" onClick="window.print()">
+                <div class="flex">
+                    <input class="printformat" type=button name=print value="Print or Save as PDF"
+                        onClick="window.print()">
                 <div id="category-nav">
                     <a href="#water"><img src="../assets/icons/water_grey.png" alt="water icon" /></a>
                     <a href="#food"><img src="../assets/icons/food_grey.png" alt="water icon" /></a>
@@ -39,10 +40,8 @@
                 Share on Facebook
             </button>
         </div>
-
     </main>
     <script type="module" src="results.js"></script>
     <script src="path/to/sharer.min.js"></script>
 </body>
-
 </html>
