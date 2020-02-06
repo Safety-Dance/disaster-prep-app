@@ -21,6 +21,25 @@ h2, h3 {
 }
 
 h3 {
+    color: #FF6347;
+}
+
+.results-div {
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.results-div:nth-of-type(odd) {
+    background: #E3EBFF;
+}
+
+.results-div:nth-of-type(even) {
+    background: #FFF;
+}
+
+h3 {
     font-size: 22px;
     text-transform: uppercase;
 }
@@ -32,4 +51,6 @@ label span {
 label p {
     margin-left: 25px;
 }
+
+
 
