@@ -35,7 +35,7 @@ progress {
   }
 
   progress::-webkit-progress-value {
-    /* transition: width 1s; */
+    transition: width 1s;
     background: #20e291;
     border-radius: 10px;
   }
