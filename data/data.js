@@ -43,7 +43,7 @@ const electricity = {
     id: 'electricity',
     title: 'Electricity',
     image: '',
-    overview: `In an emergency, you will likely be without electricity for up to three days. You should use devices (like your phone) sparingly to preserve battery, but it's also a good idea to have backup power options.`,
+    overview: `In an emergency, you will likely be without electricity for a period of time, so do not assume you will have access to power. You should use devices (like your phone) sparingly to preserve battery, but it's also a good idea to have backup power options.`,
     options: [{
         id: 'electricityOne',
         description: `I will keep a supply of batteries and/or power bricks!`,
@@ -63,7 +63,7 @@ const communication = {
     id: 'communication',
     title: 'Communication',
     image: '',
-    overview: `family communication plan DO IT, have a meeting place, in a regional emergency, have an out-of-area contact who everyone can call--memorize the phone number!`,
+    overview: `You may not be home when a disaster occurs, so you should have a plan in place for every member of your household to get back to your home (or to a safe meeting place) and get into contact with each other. In case of a region-wide emergency, decide on an out-of-area contact you will all call to check in. Make sure you all have the phone number memorized.`,
     options: [{
         id: 'communicationOne',
         description: `I will go to my nearest BEECN site!`,
@@ -94,7 +94,7 @@ const shelter = {
         tips: `Staying dry is key to staying warm, and preventing hypothermia is essential. Ponchos and emergency blankets are small, lightweight, and easy to carry.`
     }, {
         id: 'shelterThree',
-        description: `I will identify my nearest community building`,
+        description: `I will identify my nearest community building!`,
         tips: `Identify some public buildings where you might be able to go if your home is unsafe. This could include local libraries, churches, community centers, etc. Also make a plan for how you will get there.`
     }],
 };
@@ -135,7 +135,7 @@ const sanitation = {
     }, {
         id: 'sanitationThree',
         description: `I will store a supply of hygeine products and heavy-duty garbage bags!`,
-        tips: `Think about what is needed for your household specifically. This could include feminine hygeine products, diapers, or even just a few pairs of clean underwear.`
+        tips: `Think about what is needed for your household specifically. This could include feminine hygeine products, diapers, or even just a few sets of clean underwear.`
     }],
 };
 
