@@ -13,7 +13,7 @@ export function renderCategoryDiv(category, categoryId, user) {
         const newSpan = document.createElement('span');
         newDiv.appendChild(newSpan);
         const waterNeeded = householdMultiplier(user);
-        newSpan.textContent = `Based on your household size, you should plan to store ${waterNeeded} gallons of water`;
+        newSpan.textContent = `Based on your household size, you should plan to store ${waterNeeded} gallons of water.`;
     }
 
     // loop through selected options and render tips content

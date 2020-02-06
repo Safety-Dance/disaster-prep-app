@@ -12,5 +12,5 @@ form.addEventListener('submit', (event) => {
     const user = makeUser(formData);
     saveUser(user);
 
-    window.location = './category-form/index.html?id=water';
+    window.location = './category-form/index.html';
 });
