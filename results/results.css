@@ -24,6 +24,19 @@ h3 {
     color: #FF6347;
 }
 
+#category-nav {
+    display: flex;
+    justify-content: center;
+    /* background: #e3ebff; */
+    width: 55%;
+    margin: 0 auto;
+}
+
+#category-nav img {
+    width: 50px;
+    margin: 10px;
+}
+
 .results-div {
     color: #000;
     padding: 20px;
@@ -35,9 +48,16 @@ h3 {
     background: #E3EBFF;
 }
 
+
+
 .results-div:nth-of-type(even) {
     background: #FFF;
 }
+
+.icon {
+    width: 50px;
+}
+
 
 h3 {
     font-size: 22px;
@@ -67,8 +87,12 @@ label p {
     cursor: pointer;
     border-radius: 5px;
 }
+
 .printformat:focus {
     outline: none;
 }
 
-
+#water-id {
+    font-weight: 800;
+    text-align: center;
+}

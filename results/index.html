@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +11,11 @@
     <link rel="stylesheet" media="print" href="print.css">
     <title>DisasterProof</title>
 </head>
-
 <body>
     <header>
         <img src="../assets/DisasterProofLogo/DisasterProof_Combined_Symbol_Wordmark_White.png"
             alt="picture of disasterproof logo" />
     </header>
-
     <main>
         <div class="container">
             <h2></h2>
@@ -26,13 +23,25 @@
                 <div class="flex">
                     <input class="printformat" type=button name=print value="Print or Save as PDF"
                         onClick="window.print()">
+                <div id="category-nav">
+                    <a href="#water"><img src="../assets/icons/water_grey.png" alt="water icon" /></a>
+                    <a href="#food"><img src="../assets/icons/food_grey.png" alt="water icon" /></a>
+                    <a href="#shelter"><img src="../assets/icons/shelter_grey.png" alt="shelter icon" /></a>
+                    <a href="#communication"><img src="../assets/icons/communication_grey.png" alt="communication icon" /></a>
+                    <a href="#firstaid"><img src="../assets/icons/firstaid_grey.png" alt="first-aid icon" /></a>
+                    <a href="#electricity"><img src="../assets/icons/electricity_grey.png" alt="electricity icon" /></a>
+                    <a href="#sanitation"><img src="../assets/icons/sanitation_grey.png" alt="sanitation icon" /></a>
                 </div>
             </form>
+            <button id="facebook"
+                class="sharer"
+                data-sharer="facebook" 
+                data-url="">
+                Share on Facebook
+            </button>
         </div>
-
     </main>
     <script type="module" src="results.js"></script>
-    <script type="module" src="print.js"></script>
+    <script src="path/to/sharer.min.js"></script>
 </body>
-
 </html>
