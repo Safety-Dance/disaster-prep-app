@@ -24,6 +24,11 @@ h3 {
     color: #FF6347;
 }
 
+a:hover {
+    background-color: #FF6347;
+    border-radius: 15px;
+}
+
 #category-nav {
     display: flex;
     justify-content: center;
@@ -48,8 +53,6 @@ h3 {
     background: #E3EBFF;
 }
 
-
-
 .results-div:nth-of-type(even) {
     background: #FFF;
 }
@@ -57,7 +60,6 @@ h3 {
 .icon {
     width: 50px;
 }
-
 
 h3 {
     font-size: 22px;
