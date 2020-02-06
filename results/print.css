@@ -37,11 +37,10 @@
         margin-left: 0px;
     }
     
-    .flex {
+    button {
         display: none;
     }
-    
-    .printformat {
+    #category-nav img {
         display: none;
     }
 }

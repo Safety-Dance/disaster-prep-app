@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="../assets/favicon.ico" rel="icon" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Roboto:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Roboto:400,700,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../common/main.css">
     <link rel="stylesheet" href="results.css">
     <link rel="stylesheet" media="print" href="print.css">
     <title>DisasterProof</title>
 </head>
+
 <body>
     <header>
         <img src="../assets/DisasterProofLogo/DisasterProof_Combined_Symbol_Wordmark_White.png"
@@ -20,41 +23,40 @@
         <div class="container">
             <h2></h2>
             <span>
-                <button id="facebook"
-                    class="sharer"
-                    data-sharer="facebook"
+                <button id="facebook" class="sharer" data-sharer="facebook"
                     data-title="I just made my disaster preparedness plan using DisasterProof. Click the link to make sure your household is prepared, too!"
-                    data-hashtag="DisasterProof"
-                    data-url="https://safety-dance.github.io/disaster-prep-app/">
+                    data-hashtag="DisasterProof" data-url="https://safety-dance.github.io/disaster-prep-app/">
                     Share on Facebook
                 </button>
             </span>
             <span>
-                <button id="twitter"
-                    class="sharer"
-                    data-sharer="twitter" 
+                <button id="twitter" class="sharer" data-sharer="twitter"
                     data-title="I just made my disaster preparedness plan using DisasterProof. Click the link to make sure your household is prepared, too!"
-                    data-hashtag="DisasterProof"
-                    data-url="https://safety-dance.github.io/disaster-prep-app/">
+                    data-hashtag="DisasterProof" data-url="https://safety-dance.github.io/disaster-prep-app/">
                     Share on Twitter
                 </button>
+                <button class="print" onClick="window.print()">
+                    Print or Save as PDF</button>
             </span>
-            <input class="printformat" type=button name=print value="Print or Save as PDF" onClick="window.print()">
             <form>
                 <div class="flex">
-                <div id="category-nav">
-                    <a href="#water"><img src="../assets/icons/water_grey.png" alt="water icon" /></a>
-                    <a href="#food"><img src="../assets/icons/food_grey.png" alt="water icon" /></a>
-                    <a href="#shelter"><img src="../assets/icons/shelter_grey.png" alt="shelter icon" /></a>
-                    <a href="#communication"><img src="../assets/icons/communication_grey.png" alt="communication icon" /></a>
-                    <a href="#firstaid"><img src="../assets/icons/firstaid_grey.png" alt="first-aid icon" /></a>
-                    <a href="#electricity"><img src="../assets/icons/electricity_grey.png" alt="electricity icon" /></a>
-                    <a href="#sanitation"><img src="../assets/icons/sanitation_grey.png" alt="sanitation icon" /></a>
-                </div>
+                    <div id="category-nav">
+                        <a href="#water"><img src="../assets/icons/water_grey.png" alt="water icon" /></a>
+                        <a href="#food"><img src="../assets/icons/food_grey.png" alt="water icon" /></a>
+                        <a href="#shelter"><img src="../assets/icons/shelter_grey.png" alt="shelter icon" /></a>
+                        <a href="#communication"><img src="../assets/icons/communication_grey.png"
+                                alt="communication icon" /></a>
+                        <a href="#firstaid"><img src="../assets/icons/firstaid_grey.png" alt="first-aid icon" /></a>
+                        <a href="#electricity"><img src="../assets/icons/electricity_grey.png"
+                                alt="electricity icon" /></a>
+                        <a href="#sanitation"><img src="../assets/icons/sanitation_grey.png"
+                                alt="sanitation icon" /></a>
+                    </div>
             </form>
         </div>
     </main>
     <script type="module" src="results.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
 </body>
+
 </html>
