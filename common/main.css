@@ -39,6 +39,11 @@ body {
       cursor: pointer;
   }
 
+  button:hover {
+    scale: 1.3;
+  }
+
   button:focus {
       outline: none;
+      scale: 1.3;
   }
