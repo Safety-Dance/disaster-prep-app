@@ -1,5 +1,5 @@
 header {
-    width: 40%;
+    width: 30%;
     margin: 50px auto;
 }
 
@@ -14,13 +14,18 @@ header {
 }
 
 .developer {
+    font-size: 14px;
     width: 15%;
     margin: 20px;
+
 }
 
 .developer img {
+    display: block;
     width: 80%;
     border-radius: 50%;
+    margin: 0 auto;
+
 }
 
 /* Media Queries */

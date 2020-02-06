@@ -35,8 +35,9 @@ progress {
   }
 
   progress::-webkit-progress-value {
-      background: #20e291;
-      border-radius: 10px;
+    transition: width 1s;
+    background: #20e291;
+    border-radius: 10px;
   }
 
   progress::-webkit-progress-bar {
@@ -65,6 +66,10 @@ hr {
     border-top: 1px solid #EFEFEF;
 }
 
+#category-name {
+    text-transform: uppercase;
+}
+
 label {
     display: block;
 }
@@ -73,4 +78,3 @@ button {
     margin-top: 50px;
 }
 
-  
