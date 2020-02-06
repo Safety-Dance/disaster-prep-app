@@ -11,14 +11,12 @@ export function renderCategoryDiv(category, categoryId, user) {
     newDiv.appendChild(h3);
 
     if (category.title === 'Water') {
-        const newSpan = document.createElement('span');
-        newDiv.appendChild(newSpan);
+        const newPTag = document.createElement('p');
+        newDiv.appendChild(newPTag);
         const waterNeeded = householdMultiplier(user);
-        newSpan.textContent = `Based on your household size, you should plan to store ${waterNeeded} gallons of water.`;
+        newPTag.textContent = `Based on your household size, you should plan to store ${waterNeeded} gallons of water.`;
     }
 
-    // loop through selected options and render tips content
-    // renderCheckedOptionsTips();
     for (let i = 0; i < user.responses[categoryId].length; i++) {
         const userOption = user.responses[categoryId][i];
 
