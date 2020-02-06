@@ -5,8 +5,14 @@ const form = document.querySelector('form');
 
 export default function renderCategory(category, user) {
     
+    const greeting = document.getElementById('greeting');
     const userName = document.getElementById('user-name');
     userName.textContent = `${user.name}!`;
+
+    // hide greeting after first category page
+    if (category.title !== 'Water') {
+        greeting.classList.add('hidden');
+    }
 
     const categoryName = document.getElementById('category-name');
     categoryName.textContent = category.title;
