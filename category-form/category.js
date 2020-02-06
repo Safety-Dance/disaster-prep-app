@@ -12,6 +12,10 @@ progressBar.value = user.progress;
 const searchParams = new URLSearchParams(window.location.search);
 const categoryId = searchParams.get('id');
 
+if (!categoryId) {
+    window.location = './index.html?id=water';
+}
+
 const category = findById(categories, categoryId);
 
 renderCategory(category, user);
