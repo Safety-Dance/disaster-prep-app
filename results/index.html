@@ -9,24 +9,30 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../common/main.css">
     <link rel="stylesheet" href="results.css">
+    <link rel="stylesheet" media="print" href="print.css">
     <title>DisasterProof</title>
 </head>
 
 <body>
     <header>
-        <img src="../assets/DisasterProofLogo/DisasterProof_Combined_Symbol_Wordmark_White.png" alt="picture of disasterproof logo"/>
+        <img src="../assets/DisasterProofLogo/DisasterProof_Combined_Symbol_Wordmark_White.png"
+            alt="picture of disasterproof logo" />
     </header>
 
     <main>
         <div class="container">
             <h2></h2>
             <form>
-                <input type=button name=print value="Print or Save as PDF" onClick="window.print()">
+                <div class="flex">
+                    <input class="printformat" type=button name=print value="Print or Save as PDF"
+                        onClick="window.print()">
+                </div>
             </form>
         </div>
 
     </main>
     <script type="module" src="results.js"></script>
+    <script type="module" src="print.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,70 @@
+@media print {
+    header {
+        height: 75px;
+        padding: 10px 10px 0 10px;
+        margin: 0 auto;
+    }
+    
+    header img {
+        /* position: relative;
+        background-image: url("../assets/DisasterProofLogo/DisasterProof_Wordmark.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 90vw;
+        height: calc(90vw * 200 / 200);
+        margin: auto; */
+        height: 70px;
+        position: relative;
+        left: 43%;
+        margin-top: 30px;
+    }
+    
+    .container {
+        width: 65%;
+        margin: 50px auto;
+    }
+    
+    h2, h3 {
+        text-align: center;
+    }
+    
+    h3 {
+        color: black;
+    }
+    
+    /* .results-div {
+        color: #000;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+    
+    .results-div:nth-of-type(odd) {
+        background: #E3EBFF;
+    }
+    
+    .results-div:nth-of-type(even) {
+        background: #FFF;
+    } */
+    
+    h3 {
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+    
+    label span {
+        margin-left: 0px;
+    }
+    
+    label p {
+        margin-left: 0px;
+    }
+    
+    .flex {
+        display: none;
+    }
+    
+    .printformat {
+        display: none;
+    }
+}
