@@ -1,0 +1,35 @@
+header {
+    height: 75px;
+    padding: 10px 10px 0 10px;
+    margin: 0 auto;
+}
+
+header img {
+    height: 70px;
+    position: relative;
+    left: 43%;
+    margin-top: 30px;
+}
+
+.container {
+    width: 65%;
+    margin: 50px auto;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+label span {
+    margin-left: 5px;
+}
+
+label p {
+    margin-left: 25px;
+}
+

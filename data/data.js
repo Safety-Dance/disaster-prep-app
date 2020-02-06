@@ -63,7 +63,7 @@ const communication = {
     id: 'communication',
     title: 'Communication',
     image: '',
-    overview: `family communication plan DO IT, have a meeting place, in a regional emergency, have an out-of-area contact who everyone can call--memorize the phone number!`,
+    overview: `Family communication plan DO IT, have a meeting place, in a regional emergency, have an out-of-area contact who everyone can call--memorize the phone number!`,
     options: [{
         id: 'communicationOne',
         description: `I will go to my nearest BEECN site!`,
