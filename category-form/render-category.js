@@ -17,6 +17,9 @@ export default function renderCategory(category, user) {
     const categoryName = document.getElementById('category-name');
     categoryName.textContent = category.title;
 
+    const categoryIcon = document.getElementById('category-icon');
+    categoryIcon.src = category.image;
+
     const form = document.querySelector('form');
 
     const pTag = document.getElementById('description');
