@@ -96,3 +96,12 @@ button {
     display: inline;
 }
 
+.submit-note {
+    display: block;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+

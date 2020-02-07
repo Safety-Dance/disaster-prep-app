@@ -38,11 +38,6 @@ form.addEventListener('submit', (event) => {
 
     saveUser(user);
 
-    setNewSearchParam(categories, category);
-});
-
-
-function setNewSearchParam(categories, category) {
     let currentIndex = categories.indexOf(category);
     const nextIndex = currentIndex + 1;
     if (nextIndex <= 6) {
@@ -53,4 +48,8 @@ function setNewSearchParam(categories, category) {
     else {
         window.location = '../results/';
     }
-}
+});
+
+
+
+
