@@ -1,8 +1,45 @@
-.developers {
-    text-align: center;
+header {
+    width: 30%;
+    margin: 50px auto;
 }
 
-img {
+#logo {
+    width: 100%;
+}
+
+.developers {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+.developer {
+    font-size: 14px;
+    width: 15%;
+    margin: 20px;
+
+}
+
+.developer img {
+    display: block;
+    width: 80%;
     border-radius: 50%;
-    flex: wrap;
+    margin: 0 auto;
+
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+    .developers {
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .developer {
+        width: 80%;
+        margin: 10px auto;
+    }
+
 }

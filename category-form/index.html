@@ -5,42 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../assets/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Roboto:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../common/main.css">
     <link rel="stylesheet" href="category.css">
-    <title>Document</title>
+    <title>DisasterProof</title>
 </head>
 
 <body>
     <header>
-        <img src="https://www.placecage.com/100/100" />
-        <h1>Disaster Preparedness App</h1>
+        <img src="../assets/DisasterProofLogo/DisasterProof_Combined_Symbol_Wordmark_White.png" alt="picture of disasterproof logo" id="logo" />
     </header>
 
     <main>
         <div class="container">
-            <h2>Thanks, <span id="user-name"></span></h2>
-            <p>Now let's go through some household-specific needs to be prepared for in the case of a disaster.</p>
+            <div id="greeting">
+                <h2>Thanks, <span id="user-name"></span></h2>
+                <p>Now let's go through some household-specific needs to be prepared for in the case of a disaster.</p>
+                <p>There are seven major categories to think about to prepare for a disaster. We will walk you through them one at a time. For each category, choose whichever option(s) you would like to learn more about. At the end of this short survey, you will receive a custom checklist with all of your selections, as well as tips for how to accomplish each one.</p>
+            </div>
 
-            <h3>Water</h3>
-            <hr />
-
-            <progress value="0" max="100"></progress>
+            <div id="progress-div">
+                <progress value=0 max=7 id="progress-bar"></progress>
+            </div>
+            <div id = "category-title">
+                <div id = "hr-left">
+                    <hr class = "inline" />
+                </div>
+                <h3 id="category-name"></h3>
+                <div id = "hr-right" >
+                    <hr class = "inline" />
+                </div>
+            </div>
 
             <form>
-                <p id="description">Sollicitant homines non sunt nisi quam formae rerum principiis opiniones. Mors enim est terribilis ut Socrati aliud esse apparet. Sed timor mortis est notio terribile. Cum igitur impediantur turbentur aut dolere videamus aliis non tribuunt nisi nobis hoc est, in principiis nostra.</p>
-                <label>
-                    <input type="checkbox" name="" value="" />
-                    Water option #1
-                </label>
-                <label>
-                    <input type="checkbox" name="" value="" />
-                    Water option #2
-                </label>
-                <label>
-                    <input type="checkbox" name="" value="" />
-                    Water option #3
-                </label>
-                <button>Continue</button>
+                <p id="description"></p>
             </form>
         </div>
     </main>

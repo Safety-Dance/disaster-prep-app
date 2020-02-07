@@ -1,27 +1,51 @@
-//Category Page Algorithm
+import { categoriesArray } from '../data/data.js';
+import { getUser, saveUser, findById } from '../common/utils.js';
+import renderCategory from './render-category.js';
 
-//Get the user from local storage (function, utils.js)
+const categories = categoriesArray.slice();
+const user = getUser();
 
-//Get search params to reference id for displaying metadata
-    //make a findById function (utils.js?)
+const form = document.querySelector('form');
+const progressBar = document.getElementById('progress-bar');
+progressBar.value = user.progress;
 
-//forEach of the category options
-    //render textContent to <p> variable name.overview 
-    //render labels and checkbox inputs with ids, value, and name
-    //render the options and append to the inputs
+const searchParams = new URLSearchParams(window.location.search);
+const categoryId = searchParams.get('id');
 
-//add event listener to form
-    //use new FormData to get new instance of form data
-        // .get(formData), must use name attribute
-        //push only the selected option ids into the responses key as an array within the user object
-         //stringify and set/save user object to local storage (function utils.js)
+if (!categoryId) {
+    window.location = './index.html?id=water';
+}
 
-    //on submit, move to the next category
-        //get current query params
-        //match to index number of array
-        //increment the index
-        //use new index number to generate new query param on window location 
-        //if all questions are complete, move to window.location results page
+const category = findById(categories, categoryId);
 
-        //note: try using indexOf() or maybe use slice if worried about mutation
+renderCategory(category, user);
 
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const selectedInputs = document.querySelectorAll('input:checked');
+
+    selectedInputs.forEach((input) => {
+        user.responses[categoryId].push(input.name);
+    });
+
+    if (user.responses[categoryId].length === 0) {
+        alert(`Please choose at least one option by clicking a checkbox.`);
+        return;
+    }
+
+    user.progress++;
+
+    saveUser(user);
+
+    let currentIndex = categories.indexOf(category);
+    const nextIndex = currentIndex + 1;
+
+    if (nextIndex <= 6) {
+        const nextCategory = categories[nextIndex];
+        const nextCategoryId = nextCategory.id;
+        window.location = `./index.html?id=${nextCategoryId}`;
+    } else {
+        window.location = '../results/';
+    }
+});

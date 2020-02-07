@@ -1,58 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./assets/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="common/main.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Doc</title>
+    <link rel="stylesheet" href="home.css">
+    <title>DisasterProof</title>
 </head>
-
 <body>
-    <div class='header-div'>
-        <header>
-            <img id="logo" src="">
-            <img id="logo" src="">
-            <h1>Disaster Prep App</h1>
-            <h5>** App description text will go here ** </h5> 
-        </header>
-    </div>
-
+    <header>
+        <img id="logo" src="./assets/DisasterProofLogo/DisasterProof_Combined_Symbol_Wordmark_White.png" alt="picture of disasterproof logo"/>
+    </header>
     <main>
-        <div class="main-div">
+        <div class="container">
+            <p class="app-description">Planning and preparing your home emergency kit can be overwhelming. With DisasterProof, it takes just a few minutes to make all the big decisions about your own disaster preparedness plan.</p>
+            <p class="app-description">Use the form below to get started putting together your kit and making your household DisasterProof.</p> 
             <form id="sign-in-form">
-                <label for="user-name">Enter your name: </label>
-                <input type="text" name="user-name" id="user-name">
-                <br>
+                <div class="form-div">
+                <label for="user-name">Enter your first name: </label>
+                <input type="text" name="name" id="user-name" placeholder="Name" required>
+            </div>
+            <div class="form-div">
                 <label for="user-email">Enter your email: </label>
-                <input type="text" name="user-email" id="user-email">
+                <input type="email" name="email" id="user-email" placeholder="Email" required>
+            </div>
+            <div class="form-div">
+                <label for="household-size">Number of household members:</label>
                 <br>
-                <label for="household-size">Number of household members</label>
-                <br>
-                <select id = "household-size">
-                    <option value = "1">one</option>
-                    <option value = "2">two</option>
-                    <option value = "3">three</option>
-                    <option value = "4">four</option>
-                    <option value = "5">four</option>
-                    <option value = "6">four</option>
-                    <option value = "7">four</option>
-                    <option value = "8">four</option>
-                    <option value = "9">four</option>
-                    <option value = "10">four</option>
+                <select id = "household-size" name="number-household-members">
+                    <option value = "1">1</option>
+                    <option value = "2">2</option>
+                    <option value = "3">3</option>
+                    <option value = "4">4</option>
+                    <option value = "5">5</option>
+                    <option value = "6">6</option>
+                    <option value = "7">7</option>
+                    <option value = "8">8</option>
+                    <option value = "9">9</option>
+                    <option value = "10">10</option>
                 </select>
-                <button type="submit">Continue</button>
+            </div>
+                <button>Continue</button>
             </form>
         </div>
     </main>
-
     <footer id="footer">
-        <a href="***PATH-TO-DEV-PAGE/" target="_blank">About the Developers</a>
+        <a href="./dev-page/" target="_blank">About the Developers</a>
     </footer>
-
     <script type="module" src="app.js"></script>
 </body>
-
 </html>
