@@ -9,7 +9,7 @@ header {
 
 .container {
   width: 65%;
-  margin: 0 auto;
+  margin: 0 auto 125px auto;
 }
 
 .app-description {
@@ -34,21 +34,6 @@ input {
   display: flex;
   justify-content: space-between;
   margin: 10px;
-}
-
-footer {
-  color: #FFF;
-  background: #FF6347;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  padding: 15px 0;
-}
-
-footer a {
-  color: #FFF;
-  text-decoration: none;
 }
 
 .main-div {
