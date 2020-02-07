@@ -49,4 +49,12 @@
     #category-nav img {
         display: none;
     }
+
+    footer {
+        display: none;
+    }
+
+    form {
+        display: none;
+    }
 }

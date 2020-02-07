@@ -32,5 +32,51 @@ export function renderCategoryDiv(category, categoryId, user) {
         newDiv.appendChild(labelDiv);
     }
 
+    ////// New Notetaking Functionality
+    const notesDiv = document.createElement('div');
+    notesDiv.id = 'notes-div';
+
+    const separator = document.createElement('hr');
+
+    const notesSectionTitle = document.createElement('p');
+    notesSectionTitle.textContent = 'Personal Notes & Reminders';
+    notesSectionTitle.style.fontWeight = 700;
+
+    const notesList = document.createElement('ul');
+
+    const notesForm = document.createElement('form');
+
+    const textArea = document.createElement('textarea');
+    textArea.setAttribute('rows', 2);
+    textArea.setAttribute('cols', 75);
+    textArea.setAttribute('name', 'note');
+
+    const submitNote = document.createElement('button');
+    submitNote.textContent = 'Add note';
+    submitNote.classList.add('submit-note');
+
+    notesForm.append(textArea, submitNote);
+    notesDiv.append(separator, notesSectionTitle, notesList, notesForm);
+    newDiv.append(notesDiv);
+
     containerDiv.appendChild(newDiv);
+
+
+    notesForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(notesForm);
+        const noteData = formData.get('note');
+
+        createNote(noteData, notesList);
+        
+
+    });
+}
+
+
+function createNote(noteData, notesList) {
+    const noteItem = document.createElement('li');
+    noteItem.textContent = noteData;
+    notesList.appendChild(noteItem);
 }
