@@ -31,7 +31,7 @@ const food = {
     }, {
         id: 'foodTwo',
         description: `I will store freeze-dried meals!`,
-        tips: `Make sure also you have a pot and fuel source for cooking, and enough extra water to boil for cooking. `
+        tips: `Make sure also you have a pot and fuel source for cooking, and enough extra water to boil. `
     }, {
         id: 'foodThree',
         description: `I will store ready-to-eat, portable dry goods!`,
@@ -66,7 +66,7 @@ const communication = {
     overview: `You may not be home when a disaster occurs, so you should have a plan in place for every member of your household to get back to your home (or to a safe meeting place) and get into contact with each other. In case of a region-wide emergency, decide on an out-of-area contact you will all call to check in. Make sure you all have the phone number memorized.`,
     options: [{
         id: 'communicationOne',
-        description: `I will go to my nearest BEECN site!`,
+        description: `I will locate my nearest emergency communication hub!`,
         tips: `Portland maintains a series of emergency communication/assistance hubs called Basic Earthquake Emergency Communication Nodes, or BEECN. You can find your nearest BEECN site by entering your zipcode on their website: https://www.portlandoregon.gov/pbem/article/483656`
     }, {
         id: 'communicationTwo',
@@ -95,7 +95,7 @@ const shelter = {
     }, {
         id: 'shelterThree',
         description: `I will identify my nearest community building!`,
-        tips: `Identify some public buildings where you might be able to go if your home is unsafe. This could include local libraries, churches, community centers, etc. Also make a plan for how you will get there.`
+        tips: `Identify some public buildings where you might be able to go if your home is unsafe. This could include local libraries, religious buildings, community centers, etc. Also make a plan for how you will get there.`
     }],
 };
 
@@ -103,11 +103,11 @@ const firstaid = {
     id: 'firstaid',
     title: 'First Aid',
     image: '',
-    overview: `Your first-aid kit should contain enough supplies for everyone in your household, at a minimum. If anyone needs daily medication or vision correction, keep a backup supply in your kit. Think about any other special needs of people in your household that may need accommodation. It is also a good idea to have a small first-aid guide stored in your kit.`,
+    overview: `Your first-aid kit should contain enough supplies for everyone in your household, at a minimum. If anyone needs daily medication or vision correction, keep a backup supply in your kit. Think about any other special needs of people in your household. It is also a good idea to have a small first-aid guide stored in your kit.`,
     options: [{
         id: 'firstAidOne',
         description: `I will buy a pre-assembled first-aid kit!`,
-        tips: 'There are many options for pre-assembled first-aid kits. Make sure yours has enough supplies for the size of your household. Note that many of these kits do not contain medications--you may want to consider adding a few basics like anti-inflammatories and antihistamines.'
+        tips: `There are many options for pre-assembled first-aid kits. Make sure yours has enough supplies for the size of your household. Note that many of these kits do not contain medications--you may want to consider adding a few basics like anti-inflammatories and antihistamines.`
     }, {
         id: 'firstAidTwo',
         description: `I will assemble my own first-aid kit!`,
@@ -123,7 +123,7 @@ const sanitation = {
     id: 'sanitation',
     title: 'Sanitation',
     image: '',
-    overview: `Sanitation is often overlooked in planning for a disaster, but it is essential to keeping yourself and your family healthy. Think about everyday items you may need for hygeine (toiletries, etc), and what you will do if plumbing fails.`,
+    overview: `Sanitation is often overlooked in planning for a disaster, but it is essential to keeping yourself and your family healthy. Think about everyday items you may need for hygiene (toiletries, etc), and what you will do if plumbing fails.`,
     options: [{
         id: 'sanitationOne',
         description: `I will use bucket toilets!`,
@@ -134,8 +134,8 @@ const sanitation = {
         tips: `Hand sanitizer is an easy way to clean your hands and body when water is scarce. Wipes are convenient, but create waste that you will need to store somewhere.`
     }, {
         id: 'sanitationThree',
-        description: `I will store a supply of hygeine products and heavy-duty garbage bags!`,
-        tips: `Think about what is needed for your household specifically. This could include feminine hygeine products, diapers, or even just a few sets of clean underwear.`
+        description: `I will store a supply of hygiene products and heavy-duty garbage bags!`,
+        tips: `Think about what is needed for your household specifically. This could include feminine hygiene products, diapers, or even just a few sets of clean underwear.`
     }],
 };
 

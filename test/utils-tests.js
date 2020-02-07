@@ -61,7 +61,7 @@ test('Save User', function(assert) {
 
 test('multiplier', function(assert) {
     
-    let user = {name: 'name', numberHouseholdMembers: '1'};
+    let user = { name: 'name', numberHouseholdMembers: '1' };
    
     const expected = 3;
     const result = householdMultiplier(user);
