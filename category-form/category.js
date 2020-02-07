@@ -38,14 +38,19 @@ form.addEventListener('submit', (event) => {
 
     saveUser(user);
 
+    setNewSearchParam(categories, category);
+});
+
+
+function setNewSearchParam(categories, category) {
     let currentIndex = categories.indexOf(category);
     const nextIndex = currentIndex + 1;
-
     if (nextIndex <= 6) {
         const nextCategory = categories[nextIndex];
         const nextCategoryId = nextCategory.id;
         window.location = `./index.html?id=${nextCategoryId}`;
-    } else {
+    }
+    else {
         window.location = '../results/';
     }
-});
+}
