@@ -67,7 +67,7 @@ const communication = {
     options: [{
         id: 'communicationOne',
         description: `I will locate my nearest emergency communication hub!`,
-        tips: `Portland maintains a series of emergency communication/assistance hubs called Basic Earthquake Emergency Communication Nodes, or BEECN. You can find your nearest BEECN site by entering your zipcode on their website: https://www.portlandoregon.gov/pbem/article/483656`
+        tips: `Portland maintains a series of emergency communication/assistance hubs called Basic Earthquake Emergency Communication Nodes, or BEECN. ` 
     }, {
         id: 'communicationTwo',
         description: `I will maintain an emergency/weather radio!`,
