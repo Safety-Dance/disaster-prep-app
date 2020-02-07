@@ -16,6 +16,15 @@ header img {
     margin: 50px auto;
 }
 
+#results-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 10px;
+}
+
 h2, h3 {
     text-align: center;
 }
@@ -78,3 +87,12 @@ label p {
     font-weight: 700;
     text-align: center;
 }
+
+#results-buttons div button {
+    margin: 10px 0;
+}
+
+button {
+    display: inline;
+}
+

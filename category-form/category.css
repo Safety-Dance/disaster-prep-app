@@ -29,7 +29,7 @@ progress {
     text-indent: .5em;
     border-radius: 10px;
     background: #fff;
-    margin-top: 75px;
+    margin-top: 50px;
     width: 500px;
     height: 1.8em;
   }
@@ -52,7 +52,7 @@ progress {
 #category-title {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 #hr-left, #hr-right {
