@@ -15,21 +15,22 @@
 
 ## Problem Domain:
 ---
-Currently, no apps that we know of exist to help users create and manage a customized disaster preparedness list. 
+Currently, no apps that we know of exist to help users create and manage a customized disaster preparedness checklist. There are many resources that tell users how to prepare for a disaster, but they often provide so much information that it's difficult to tell where to start. 
 
 ## User Stories:
 ---
 ### Feature: Customized List
-"As a family of four living in Portland, I want to make sure that we are prepared for emergencies so that our family will be prepared! But I'm overwhlemed by all the resources that are available and don't know where to start." -User One
+"As a family of four living in Portland, I want to make sure that we are prepared for emergencies so that our family will be prepared! But I'm overwhelmed by all the resources that are available and don't know where to start." -User One
 
 >DisasterProof makes planning easier by allowing individuals to answer just a few short questions and renders a customized list of tasks based entirely on what the user identifies as target goals. 
 
-
 ### Feature: Print/Save Rendered List
-" As someone who wants to engage their whole household in planning, I want to be able to refer to this list repeatedly so that we can track our progress over time." - User Two
+"As someone who wants to engage their whole household in planning, I want to be able to refer to this list repeatedly so that we can track our progress over time." - User Two
 
->DisasterProof allows each user to print and/or save their customized list! This will allow users to share their list with other household members, save it electronically, or print for a quick reference guide.  
->
+>DisasterProof allows each user to print and/or save their customized list. This will allow users to share their list with other household members, save it electronically, or print for a quick reference guide.
+
+### Feature: At-a-Glance, Curated Tips
+"As a Pacific Northwest newcomer, I am worried about 'the big one,' but I don't know much about earthquake safety. I want a quick overview that tells me what I need to know, just in case." - User Three
 
 
 ## MIT License
@@ -44,4 +45,3 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 End license text.
-
