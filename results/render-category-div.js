@@ -27,9 +27,9 @@ export function renderCategoryDiv(category, categoryId, user) {
         const userOption = user.responses[categoryId][i];
 
         const userOptionObject = findById(category.options, userOption);
-        const label = renderCheckedOptionsTips(userOptionObject);
+        const labelDiv = renderCheckedOptionsTips(userOptionObject);
 
-        newDiv.appendChild(label);
+        newDiv.appendChild(labelDiv);
     }
 
     containerDiv.appendChild(newDiv);
