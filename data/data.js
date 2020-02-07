@@ -1,7 +1,7 @@
 const water = {
     id: 'water',
     title: 'Water',
-    image: '',
+    image: '../assets/icons/water_grey.png',
     overview: `The CDC recommends storing a three-day supply of water for your household, for drinking and sanitation purposes. This means you will need one gallon of water per person (and pet!) per day. If anyone in your home is pregnant or ill, or if you live in a hot climate, you might want to consider storing more.`,
     options: [{
         id: 'waterOne',
@@ -22,7 +22,7 @@ const water = {
 const food = {
     id: 'food',
     title: 'Food',
-    image: '',
+    image: '../assets/icons/food_grey.png',
     overview: `Store at least a three-day supply of non-perishable food for everyone in your household. Make sure you will also have access to any needed can-openers, cooking/eating utensils, etc.`,
     options: [{
         id: 'foodOne',
@@ -42,7 +42,7 @@ const food = {
 const electricity = {
     id: 'electricity',
     title: 'Electricity',
-    image: '',
+    image: '../assets/icons/electricity_grey.png',
     overview: `In an emergency, you will likely be without electricity for a period of time, so do not assume you will have access to power. You should use devices (like your phone) sparingly to preserve battery, but it's also a good idea to have backup power options.`,
     options: [{
         id: 'electricityOne',
@@ -62,7 +62,7 @@ const electricity = {
 const communication = {
     id: 'communication',
     title: 'Communication',
-    image: '',
+    image: '../assets/icons/communication_grey.png',
     overview: `You may not be home when a disaster occurs, so you should have a plan in place for every member of your household to get back to your home (or to a safe meeting place) and get into contact with each other. In case of a region-wide emergency, decide on an out-of-area contact you will all call to check in. Make sure you all have the phone number memorized.`,
     options: [{
         id: 'communicationOne',
@@ -82,7 +82,7 @@ const communication = {
 const shelter = {
     id: 'shelter',
     title: 'Shelter',
-    image: '',
+    image: '../assets/icons/shelter_grey.png',
     overview: `If your home remains intact after a disaster, it is likely your safest location to shelter in place. But if your home is now unsafe, you will need a portable way to stay out of the elements and keep warm.`,
     options: [{
         id: 'shelterOne',
@@ -102,7 +102,7 @@ const shelter = {
 const firstaid = {
     id: 'firstaid',
     title: 'First Aid',
-    image: '',
+    image: '../assets/icons/firstaid_grey.png',
     overview: `Your first-aid kit should contain enough supplies for everyone in your household, at a minimum. If anyone needs daily medication or vision correction, keep a backup supply in your kit. Think about any other special needs of people in your household. It is also a good idea to have a small first-aid guide stored in your kit.`,
     options: [{
         id: 'firstAidOne',
@@ -122,7 +122,7 @@ const firstaid = {
 const sanitation = {
     id: 'sanitation',
     title: 'Sanitation',
-    image: '',
+    image: '../assets/icons/sanitation_grey.png',
     overview: `Sanitation is often overlooked in planning for a disaster, but it is essential to keeping yourself and your family healthy. Think about everyday items you may need for hygiene (toiletries, etc), and what you will do if plumbing fails.`,
     options: [{
         id: 'sanitationOne',
