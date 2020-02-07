@@ -53,4 +53,8 @@
     footer {
         display: none;
     }
+
+    form {
+        display: none;
+    }
 }
