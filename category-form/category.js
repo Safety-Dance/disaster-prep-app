@@ -40,12 +40,16 @@ form.addEventListener('submit', (event) => {
 
     let currentIndex = categories.indexOf(category);
     const nextIndex = currentIndex + 1;
-
     if (nextIndex <= 6) {
         const nextCategory = categories[nextIndex];
         const nextCategoryId = nextCategory.id;
         window.location = `./index.html?id=${nextCategoryId}`;
-    } else {
+    }
+    else {
         window.location = '../results/';
     }
 });
+
+
+
+
