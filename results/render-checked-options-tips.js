@@ -1,4 +1,6 @@
 export function renderCheckedOptionsTips(userOptionObject) {
+    const labelDiv = document.createElement('div');
+    labelDiv.classList.add('category-choice-div');
     const label = document.createElement('label');
 
     const input = document.createElement('input');
@@ -13,6 +15,7 @@ export function renderCheckedOptionsTips(userOptionObject) {
     pTag.textContent = userOptionObject.tips;
     label.appendChild(pTag);
 
-    return label;
-    
+    labelDiv.appendChild(label);
+
+    return labelDiv; 
 }
