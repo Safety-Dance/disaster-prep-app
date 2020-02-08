@@ -47,5 +47,9 @@ header {
         margin: 10px auto;
     }
 
+    h1 {
+        text-align: center;
+    }
+
 }
 
