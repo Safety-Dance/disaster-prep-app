@@ -109,3 +109,32 @@ footer {
     position: relative;
 }
 
+@media(max-width: 600px) {
+    button {
+        font-size: 10px;
+        width:90px;
+        padding: 5px;
+    }
+
+    .container {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    #category-nav img {
+        width: 30px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    footer a:hover {
+        color: #FFF;
+    }
+}
+
