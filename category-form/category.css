@@ -55,6 +55,10 @@ progress {
     display: none;
 }
 
+#category-icon {
+    max-height: 50px;
+}
+
 #category-title {
     display: flex;
     justify-content: space-between;
@@ -85,6 +89,7 @@ label {
 button {
     margin-top: 50px;
 }
+
 
 
 
