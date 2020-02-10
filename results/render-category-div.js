@@ -14,6 +14,10 @@ export function renderCategoryDiv(category, categoryId, user) {
     const h3 = document.createElement('h3');
     h3.textContent = category.title;
     newDiv.appendChild(h3);
+    const overview = document.createElement('p');
+    overview.setAttribute('id', 'overview');
+    overview.textContent = category.overview;
+    newDiv.appendChild(overview);
 
     if (category.title === 'Water') {
         const newPTag = document.createElement('p');
@@ -67,10 +71,10 @@ export function renderCategoryDiv(category, categoryId, user) {
 
         const formData = new FormData(notesForm);
         const noteData = formData.get('note');
+        const textArea = document.querySelector('textarea');
 
         createNote(noteData, notesList);
-        
-
+        textArea.value = '';
     });
 }
 

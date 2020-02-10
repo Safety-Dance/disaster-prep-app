@@ -88,6 +88,13 @@ label p {
     text-align: center;
 }
 
+#overview {
+    text-align: justify;
+    border: solid 2px #FF6347;
+    border-radius: 15px;
+    padding: 10px;
+}
+
 #results-buttons div button {
     margin: 10px 0;
 }
