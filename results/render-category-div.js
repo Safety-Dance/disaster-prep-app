@@ -27,16 +27,14 @@ export function renderCategoryDiv(category, categoryId, user) {
         newPTag.textContent = `Based on your household size, you should plan to store ${waterNeeded} gallons of water.`;
     }
 
-    for (let i = 0; i < user.responses[categoryId].length; i++) {
-        const userOption = user.responses[categoryId][i];
-
-        const userOptionObject = findById(category.options, userOption);
+    Object.values(user.responses[categoryId]).forEach(categoryId => {
+        const userOptionObject = findById(category.options, categoryId);
         const labelDiv = renderCheckedOptionsTips(userOptionObject);
 
         newDiv.appendChild(labelDiv);
-    }
+    });
 
-    ////// New Notetaking Functionality
+    // New Notetaking Functionality
     const notesDiv = document.createElement('div');
     notesDiv.id = 'notes-div';
 
@@ -65,7 +63,6 @@ export function renderCategoryDiv(category, categoryId, user) {
 
     containerDiv.appendChild(newDiv);
 
-
     notesForm.addEventListener('submit', (event) => {
         event.preventDefault();
 
@@ -77,7 +74,6 @@ export function renderCategoryDiv(category, categoryId, user) {
         textArea.value = '';
     });
 }
-
 
 function createNote(noteData, notesList) {
     const noteItem = document.createElement('li');

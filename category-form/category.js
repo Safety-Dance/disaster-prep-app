@@ -4,24 +4,20 @@ import renderCategory from './render-category.js';
 
 const categories = categoriesArray.slice();
 const user = getUser();
-
 const form = document.querySelector('form');
 const progressBar = document.getElementById('progress-bar');
 progressBar.value = user.progress;
-
 const searchParams = new URLSearchParams(window.location.search);
 const categoryId = searchParams.get('id');
 
-if (!categoryId) {
-    window.location = './index.html?id=water';
-}
+if (!categoryId) window.location = './index.html?id=water';
 
 const category = findById(categories, categoryId);
 
 renderCategory(category, user);
 
-form.addEventListener('submit', (event) => {
-    event.preventDefault();
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
 
     const selectedInputs = document.querySelectorAll('input:checked');
 
@@ -39,7 +35,7 @@ form.addEventListener('submit', (event) => {
     saveUser(user);
 
     let currentIndex = categories.indexOf(category);
-    const nextIndex = currentIndex + 1;
+    const nextIndex = currentIndex + 1; //Must be + 1! ++ does not work
     if (nextIndex <= 6) {
         const nextCategory = categories[nextIndex];
         const nextCategoryId = nextCategory.id;
@@ -49,7 +45,3 @@ form.addEventListener('submit', (event) => {
         window.location = '../results/';
     }
 });
-
-
-
-

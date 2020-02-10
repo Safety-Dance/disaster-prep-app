@@ -14,6 +14,3 @@ export function renderOption(option) {
 
     return label;
 }
-
-
-/// see if we can refactor into forEach loop
