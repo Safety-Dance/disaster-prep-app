@@ -42,6 +42,7 @@ export function findById(array, id) {
 
 export function householdMultiplier(user) {
     const householdMembers = Number(user.numberHouseholdMembers);
+    // nice naming inside the function! however, from the outside, i don't know whaat `householdMultiplier` does. maybe `calculateWater` would be easier to read?
     const waterNeeded = (householdMembers * 3);
     return waterNeeded;
 }

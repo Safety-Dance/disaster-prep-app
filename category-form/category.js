@@ -25,11 +25,13 @@ form.addEventListener('submit', (event) => {
 
     const selectedInputs = document.querySelectorAll('input:checked');
 
+    const responses = user.responses[categoryId];
+
     selectedInputs.forEach((input) => {
-        user.responses[categoryId].push(input.name);
+        responses.push(input.name);
     });
 
-    if (user.responses[categoryId].length === 0) {
+    if (!responses.length) {
         alert(`Please choose at least one option by clicking a checkbox.`);
         return;
     }
