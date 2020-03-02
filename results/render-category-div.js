@@ -51,6 +51,7 @@ export function renderCategoryDiv(category, categoryId, user) {
     const notesForm = document.createElement('form');
 
     const textArea = document.createElement('textarea');
+    // nice!
     textArea.setAttribute('rows', 2);
     textArea.setAttribute('cols', 75);
     textArea.setAttribute('name', 'note');
@@ -79,6 +80,7 @@ export function renderCategoryDiv(category, categoryId, user) {
 }
 
 
+// breaking the big function out into more little ones like this would probably make the code more readable
 function createNote(noteData, notesList) {
     const noteItem = document.createElement('li');
     noteItem.textContent = noteData;

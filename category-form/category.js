@@ -16,6 +16,7 @@ if (!categoryId) {
     window.location = './index.html?id=water';
 }
 
+// what if there is no match? should we redirect the user? otherwise there will be a messy js error if `renderCategory` gets called
 const category = findById(categories, categoryId);
 
 renderCategory(category, user);
@@ -40,9 +41,10 @@ form.addEventListener('submit', (event) => {
 
     saveUser(user);
 
+    // cool logic!
     let currentIndex = categories.indexOf(category);
     const nextIndex = currentIndex + 1;
-    if (nextIndex <= 6) {
+    if (nextIndex <= categories.length - 1) { // since categoriesArray.length is 7, i assume this works
         const nextCategory = categories[nextIndex];
         const nextCategoryId = nextCategory.id;
         window.location = `./index.html?id=${nextCategoryId}`;
