@@ -1,7 +1,10 @@
 import { renderOption } from './render-option.js';
 import { householdMultiplier } from '../common/utils.js';
 
-const form = document.querySelector('form');
+const form = document.querySelector('form'); // this form declaration is never used
+
+// const the magic string
+const FIRST_CATEGORY = 'Water';
 
 export default function renderCategory(category, user) {
     
@@ -10,7 +13,7 @@ export default function renderCategory(category, user) {
     userName.textContent = `${user.name}!`;
 
     // hide greeting after first category page
-    if (category.title !== 'Water') {
+    if (category.title !== FIRST_CATEGORY) {
         greeting.classList.add('hidden');
     }
 
@@ -20,12 +23,12 @@ export default function renderCategory(category, user) {
     const categoryIcon = document.getElementById('category-icon');
     categoryIcon.src = category.image;
 
-    const form = document.querySelector('form');
+    const form = document.querySelector('form'); // looks like this declaration collides with the declaration on line 4
 
     const pTag = document.getElementById('description');
     pTag.textContent = category.overview;
 
-    if (category.title === 'Water') {
+    if (category.title === FIRST_CATEGORY) {
         const householdPTag = document.createElement('p');
         form.appendChild(householdPTag);
         const waterNeeded = householdMultiplier(user);
